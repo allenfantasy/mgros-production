@@ -1,4 +1,4 @@
-mgros-production
+[[mgros-production]]
 ================
 
-Code while developint MGros.
+The theme code of MGros.

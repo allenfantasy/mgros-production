@@ -1,0 +1,16 @@
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.span1 {
+  width: 320px;
+}
+.span2 {
+  width: 640px;
+}
+.span3 {
+  width: 960px;
+}
+

@@ -1,0 +1,216 @@
+/* Add the scaffold */
+@import url("scaffold.css");
+/* ================ */
+
+html{
+	overflow-y: scroll;
+	overflow-x: scroll;
+	height: 100%;
+}
+body {
+	margin : 0 auto;
+	font-family: 'Verdana','sans-serif';
+  /*font-family: "Gill Sans", Verdana, sans-serif;*/
+	height: 100%;
+	font-size : 13px;
+	line-height: 22px;
+}
+a {
+	text-decoration:none;
+	color:#000000;
+}
+img{
+	border:none;
+}
+h2{
+	color:#F2AE7F;
+}
+h3{
+	color:#F2AE7F;
+	font-weight:normal;
+}
+
+
+/* Global */
+div.container{
+	margin:0 auto;
+	padding-top:20px;
+}
+
+#middle > * {
+  float: left;
+}
+#middle {
+  clear: both;
+}
+.preface{
+
+}
+
+/* Breadcrumb */
+div#head .breadcrumb a,
+div#head .breadcrumb {
+}
+
+div#head .breadcrumb{
+  padding-left: 40px;
+  clear: both;
+}
+
+/* Sidebar Menu */
+.nav ul {
+  padding-left: 40px;
+}
+.nav ul li {
+  list-style: none;
+  color:#FF8754;
+  padding: 0;
+  margin: 0;
+}
+.nav ul li:hover, #footer ul li:hover,
+.nav ul li.active-trail, #footer ul li.active-trail {
+  list-style: disc;
+}
+.nav li a {
+  color: #6B5C4F;
+  font-size: 16px;
+  font-family: "Gill Sans", Verdana, sans-serif;
+}
+.nav li a.active {
+  color: #FF8754;
+}
+/* Topic Menu */
+.region-preface .block-menu {
+  float: left;
+  width: 320px;
+  height: 350px;
+}
+.region-preface .block-menu ul li {
+  list-style: none;
+  color: #ffffff;
+}
+#block-menu-menu-vermieten {
+  color: #FF5F00;
+}
+/* Footer Menu */
+#footer ul {
+  width: 51%;
+	float: right;
+  padding: 0;
+}
+#footer ul li {
+	/*display: inline;*/
+  float: right;
+  color: #E55300;
+  list-style: none;
+  padding: 0 3px 0 0;
+}
+#footer ul li a {
+  font-size: 10px;
+}
+
+/* Search */
+div.search{
+}
+
+/*Header Topic */
+.view-header-topics .views-row {
+  float: left;
+  margin-top: -32px;
+}
+.view-header-topics .views-row .image {
+  height: 200px;
+}
+.view-header-topics .views-row .title {
+  position: relative;
+  top: 180px;
+  background-color: #6B5C4F;
+  padding: 5px 0;
+  opacity: 0.85;
+  font-size: 16px;
+}
+.view-header-topics .views-row .title span {
+  margin-left: 30px;
+}
+.view-header-topics a {
+  color: #ffffff;
+}
+  /* topics color */
+.color-0,.view-header-topics .views-row .title.color-0:hover {
+	background-color: #FF5F00;
+}
+.color-1,.view-header-topics .views-row .title.color-1:hover {
+	background-color: #FF8754;
+}
+.color-2,.view-header-topics .views-row .title.color-2:hover {
+	background-color: #E55300;
+}
+.color-3,.view-header-topics .views-row .title.color-3:hover {
+	background-color: #FFB300;
+}
+.color-4,.view-header-topics .views-row .title.color-4:hover {
+	background-color: #FF9A00;
+}
+.color-5,.view-header-topics .views-row .color-5:hover {
+	background-color: #FDC745;
+}
+
+/* Topic Block */
+#block-views-topic-image-block {
+  float: right;
+}
+#block-views-topic-block {
+  float: left;
+  width: 320px;
+}
+
+/* Contact Form */
+.node-webform label,
+.node-webform .form-radios,
+.node-webform .form-type-radio,
+.node-webform .form-textarea-wrapper,
+.node-webform input[type="text"],
+.node-webform textarea {
+	margin-right: 0;
+}
+.node-webform .form-type-radio {
+	display: inline;
+}
+.node-webform label {
+	width: 180px;
+	float: left;
+}
+.node-webform label.option {
+	float: none;
+}
+.node-webform input[type="text"] {
+	width: 520px;
+}
+.node-webform input[type="submit"] {
+	float: right;
+	font-size: 16px;
+	color: #fff;
+	background-color: #FF5F00;
+	border: none;
+	margin-right: 20px;
+	padding: 2px 20px;
+}
+.node-webform textarea {
+	width: 525px;
+	resize: none;
+}
+
+/*Download Block*/
+
+/*Artikel*/
+body.node-type-article div.field-name-body{
+}
+body.node-type-article div.field-name-field-{
+}
+body.node-type-article div.field-name-field-{
+}
+
+/* A-Z */
+
+
+/* Footer */

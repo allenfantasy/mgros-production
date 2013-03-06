@@ -1,9 +1,11 @@
 <?php
+if($content['field_sub_headline']) {
 $tid = $content['field_sub_headline']['#object']->field_tags['und'][0]['tid'];
 $node = $content['field_sub_headline']['#object'];
 for($i=0;$i<count($node->field_sub_headline['und']); $i++) {
   $info[$i]['headline'] = $node->field_sub_headline['und'][$i]['value'];
   $info[$i]['text'] = $node->field_text['und'][$i]['value'];
+  }
 }
 ?>
 

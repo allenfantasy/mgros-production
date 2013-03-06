@@ -39,3 +39,4 @@
 # Ignore the images in the theme
 /img
 .DS_Store
+/.sass_cache

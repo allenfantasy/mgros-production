@@ -1,0 +1,40 @@
+@mixin span($t)
+  width: 320px * $t
+
+/* global style */
+html
+  overflow: scroll
+  height: 100%
+body
+  margin: 0 auto
+  font:
+    family: 'Verdana', 'sans-serif'
+    size: 13px
+  line-height: 22px
+  height: 100%
+a
+  text-decoration: none
+  color: #000
+img
+  border: none
+h2
+  color: #F2AE7F
+h3
+  color: #F2AE7F
+.container
+  margin: 0 auto
+  padding-top: 20px
+#middle
+  clear: both
+
+
+.pull-left
+  float: left
+.pull-right
+  float: right
+.span1
+  @include span(1)
+.span2
+  @include span(2)
+.span3
+  @include span(3)

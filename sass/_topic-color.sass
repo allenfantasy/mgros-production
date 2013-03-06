@@ -1,0 +1,68 @@
+@mixin vermieten
+  background-color: #FF5F00
+@mixin mieten
+  background-color: #FF8754
+@mixin immobilien_service
+  background-color: #E55300
+@mixin verkaufen
+  background-color: #FFB300
+@mixin kaufen
+  background-color: #FF9A00
+@mixin immobilien_kompetenz
+  background-color: #FDC745
+@mixin gray_11
+  background-color: #6B5C4F
+
+/* topic colors */
+.color-0
+  @include vermieten
+.color-1
+  @include mieten
+.color-2
+  @include immobilien_service
+.color-3
+  @include verkaufen
+.color-4
+  @include kaufen
+.color-5
+  @include immobilien_kompetenz
+
+.view-header-topics
+  .title.color-0:hover
+    @extend .color-0
+  .title.color-1:hover
+    @extend .color-1
+  .title.color-2:hover
+    @extend .color-2
+  .title.color-3:hover
+    @extend .color-3
+  .title.color-4:hover
+    @extend .color-4
+  .title.color-5:hover
+    @extend .color-5
+#block-menu-menu-vermieten
+  @include vermieten
+#block-menu-menu-verkaufen
+  @include verkaufen
+#block-menu-menu-immobilienservice
+  @include immobilien_service
+#block-menu-menu-immobilienkompetenz
+  @include immobilien_kompetenz
+#block-menu-menu-mieten
+  @include mieten
+#block-menu-menu-kaufen
+  @include kaufen
+
+#block-views-topic-block
+  .vermieten
+    @include vermieten
+  .verkaufen
+    @include verkaufen
+  .immobilienservice
+    @include immobilien_service
+  .mieten
+    @include mieten
+  .kaufen
+    @include kaufen
+  .immobilienkompetenz
+    @include immobilien_kompetenz

@@ -2,7 +2,7 @@ name = mgros
 description = Theme for MGros written by dev.cna@borsch.net
 version = 1.0
 core = 7.x
-stylesheets[all][] = css/style.css
+stylesheets[all][] = style.css
 
 regions[header] = Header
 regions[preface] = Preface

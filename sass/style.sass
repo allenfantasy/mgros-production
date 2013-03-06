@@ -1,11 +1,140 @@
-@vermieten: #FF5F00;
-@mieten: #FF8754;
-@immobilien_service: #E55300;
-@verkaufen: #FFB300;
-@kaufen: #FF9A00;
-@immobilien_kompetenz: #FDC745;
-@gray_11: #6B5C4F;
+@import "global"
 
-.color-0, .view-header-topics .views-row .title.color-0:hover {
-  background-color: @vermieten;
-}
+$left-pad: 40px
+/* Breadcrumb */
+#head .breadcrumb
+  padding-left: $left-pad
+  clear: both
+
+/* Menu */
+.nav ul
+  padding-left: $left-pad
+  li
+    list-style: none
+    color: #FF8754
+    padding: 0
+    margin: 0
+    &:hover
+      list-style: disc
+    a
+      color: #6B5C4F
+      font:
+        size: 16px
+        family: "Gill Sans", Verdana, sans-serif
+    a.active
+      color: #FF8754
+  li.active-trail
+    list-style: disc
+
+.region-preface
+  .block-menu
+    float: left
+    width: 320px
+    height: 350px
+    ul
+      margin-top: 60px
+      padding-left: $left-pad
+      li
+        list-style: none
+        color: #fff
+        margin-left: 0
+        &:hover
+          list-style: disc
+        a
+          color: #fff
+          font-size: 14px
+
+#footer
+  ul
+    width: 51%
+    float: right
+    padding: 0
+    li
+      float: right
+      color: #E55300
+      list-style: none
+      padding: 0 3px 0 0
+      &:hover
+        list-style: disc
+      a
+        font-size: 10px
+    li.active-trail
+      list-style: disc
+
+/* Search */
+
+/* Preface */
+.view-header-topics
+  .views-row
+    float: left
+    margin-top: -32px
+    .image
+      height: 200px
+    .title
+      position: relative
+      top: 180px
+      background-color: #6B5C4F
+      padding: 5px 0
+      opacity: 0.85
+      font-size: 16px
+      span
+        margin-left: 30px
+  a
+    color: #fff
+
+@import "topic-color"
+
+/* topic block */
+#block-views-topic-image-block
+  float: right
+#block-views-topic-block
+  float: left
+  height: 50px
+  @include span(1)
+  .topic-name
+    height: 48px
+    margin-top: 1px
+    color: #fff
+    font-size: 18px
+    //text-align: center
+    span
+      padding-top: 10px
+      display: block
+      margin-left: $left-pad
+
+/* contact form */
+.node-webform
+  label
+    width: 180px
+    float: left
+    margin-right: 0
+  label.option
+    float: none
+  .form-radios
+    margin-right: 0
+  .form-type-radio
+    margin-right: 0
+    display: inline
+  .form-textarea-wrapper
+    margin-right: 0
+  .input[type="text"]
+    margin-right: 0
+    width: 520px
+  .input[type="submit"]
+    float: right
+    font-size: 16px
+    color: #fff
+    background-color: #FF5F00
+    border: none
+    margin-right: 20px
+    padding: 2px 20px
+  textarea
+    width: 525px
+    resize: none
+
+/* download block */
+
+/* artikel */
+
+/* a-z */
+

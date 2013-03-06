@@ -1,4 +1,1 @@
-[[mgros-production]]
-================
-
-The theme code of MGros.
+This is the theme code of MGros.

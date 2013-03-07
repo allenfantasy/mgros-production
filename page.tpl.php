@@ -23,7 +23,9 @@ piwikTracker.enableLinkTracking();
 <div class="container span3 clearfix">
 
   <div id="head">
+    <div class="logo">
     <a href ="/"><img src="/sites/all/themes/mgros/img/logo.png"></a>
+    </div>
     <?php print render($page['header']) ?>
     <?php print render($page['preface']) ?>
     <?php print($breadcrumb); ?>

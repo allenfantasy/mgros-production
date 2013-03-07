@@ -2,9 +2,13 @@
 
 $left-pad: 40px
 /* Breadcrumb */
-#head .breadcrumb
-  padding-left: $left-pad
-  clear: both
+#head
+  .logo
+    img
+      @include span(1)
+  .breadcrumb
+    padding-left: $left-pad
+    clear: both
 
 /* Menu */
 .nav ul
@@ -12,7 +16,7 @@ $left-pad: 40px
   li
     list-style: none
     color: #FF8754
-    padding: 0
+    padding: 2px 0
     margin: 0
     &:hover
       list-style: disc
@@ -23,8 +27,11 @@ $left-pad: 40px
         family: "Gill Sans", Verdana, sans-serif
     a.active
       color: #FF8754
+    ul
+      padding-left: 15px
   li.active-trail
     list-style: disc
+
 
 .region-preface
   .block-menu
@@ -38,6 +45,7 @@ $left-pad: 40px
         list-style: none
         color: #fff
         margin-left: 0
+        padding: 5px 0
         &:hover
           list-style: disc
         a
@@ -46,7 +54,7 @@ $left-pad: 40px
 
 #footer
   ul
-    width: 51%
+    width: 55%
     float: right
     padding: 0
     li

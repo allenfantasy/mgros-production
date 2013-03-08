@@ -37,6 +37,12 @@ h3 {
 #middle {
   clear: both;
 }
+#middle .nav {
+  margin-top: 15px;
+}
+#middle .content {
+  margin-top: 15px;
+}
 
 .pull-left {
   float: left;
@@ -60,7 +66,7 @@ h3 {
 
 /* Breadcrumb */
 #head .logo img {
-  width: 320px;
+  width: 200px;
 }
 #head .breadcrumb {
   padding-left: 40px;
@@ -118,6 +124,41 @@ h3 {
   font-size: 14px;
 }
 
+#block-menu-menu-header-menu-a-z {
+  width: 100%;
+  height: auto;
+}
+#block-menu-menu-header-menu-a-z ul {
+  margin: 0 auto;
+  padding-left: 0;
+}
+#block-menu-menu-header-menu-a-z ul li {
+  float: left;
+  list-style: none;
+  width: 320px;
+  padding: 0;
+}
+#block-menu-menu-header-menu-a-z ul li:hover {
+  color: #f2ae7f;
+}
+#block-menu-menu-header-menu-a-z ul li a {
+  color: #6b5c4f;
+  display: block;
+  margin: 5px 0;
+  border: 1px solid;
+  border-color: transparent #6b5c4f;
+  text-indent: 40px;
+}
+#block-menu-menu-header-menu-a-z ul li a:hover {
+  color: #f2ae7f;
+}
+#block-menu-menu-header-menu-a-z ul li.first a {
+  border-left: none;
+}
+#block-menu-menu-header-menu-a-z ul li.last a {
+  border-right: none;
+}
+
 #footer ul {
   width: 55%;
   float: right;
@@ -131,6 +172,7 @@ h3 {
 }
 #footer ul li:hover {
   list-style: disc;
+  list-style-position: inside;
 }
 #footer ul li a {
   font-size: 10px;
@@ -143,21 +185,27 @@ h3 {
 /* Preface */
 .view-header-topics .views-row {
   float: left;
-  margin-top: -32px;
-}
-.view-header-topics .views-row .image {
-  height: 200px;
-}
-.view-header-topics .views-row .title {
   position: relative;
-  top: 180px;
+}
+.view-header-topics .views-row a {
+  position: absolute;
+  top: 150px;
+  width: 320px;
+  float: left;
+  z-index: 1;
+}
+.view-header-topics .views-row a .title {
   background-color: #6b5c4f;
   padding: 5px 0;
   opacity: 0.85;
   font-size: 16px;
 }
-.view-header-topics .views-row .title span {
-  margin-left: 30px;
+.view-header-topics .views-row a span {
+  margin-left: 40px;
+}
+.view-header-topics .views-row .image {
+  height: 200px;
+  clear: both;
 }
 .view-header-topics a {
   color: white;
@@ -228,6 +276,21 @@ h3 {
   background-color: #ff9a00;
 }
 #block-views-topic-block .immobilienkompetenz {
+  background-color: #fdc745;
+}
+
+/* Dummy Block */
+#block-block-1 {
+  float: left;
+  height: 350px;
+  width: 320px;
+  background-color: #ff8754;
+}
+
+#block-block-2 {
+  float: left;
+  height: 350px;
+  width: 320px;
   background-color: #fdc745;
 }
 

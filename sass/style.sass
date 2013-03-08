@@ -5,7 +5,7 @@ $left-pad: 40px
 #head
   .logo
     img
-      @include span(1)
+      width: 200px
   .breadcrumb
     padding-left: $left-pad
     clear: both
@@ -51,7 +51,36 @@ $left-pad: 40px
         a
           color: #fff
           font-size: 14px
-
+#block-menu-menu-header-menu-a-z
+  width: 100%
+  height: auto
+  ul
+    margin: 0 auto
+    padding-left: 0
+    li
+      float: left
+      list-style: none
+      @include span(1)
+      padding: 0
+      &:hover
+        color: #F2AE7F
+        //list-style: disc
+        //list-style-position: outside
+      a
+        color: #6B5C4F
+        display: block
+        margin: 5px 0
+        border: 1px solid
+        border-color: transparent #6B5C4F
+        text-indent: $left-pad
+        &:hover
+          color: #F2AE7F
+    li.first
+      a
+        border-left: none
+    li.last
+      a
+        border-right: none
 #footer
   ul
     width: 55%
@@ -64,6 +93,7 @@ $left-pad: 40px
       padding: 0 3px 0 0
       &:hover
         list-style: disc
+        list-style-position: inside
       a
         font-size: 10px
     li.active-trail
@@ -75,22 +105,39 @@ $left-pad: 40px
 .view-header-topics
   .views-row
     float: left
-    margin-top: -32px
+    position: relative
+    a
+      position: absolute
+      top: 150px
+      @include span(1)
+      float: left
+      z-index: 1
+      .title
+        background-color: #6B5C4F
+        padding: 5px 0
+        opacity: 0.85
+        font-size: 16px
+      span
+        margin-left: $left-pad
     .image
       height: 200px
-    .title
-      position: relative
-      top: 180px
-      background-color: #6B5C4F
-      padding: 5px 0
-      opacity: 0.85
-      font-size: 16px
-      span
-        margin-left: 30px
+      clear: both
   a
     color: #fff
 
 @import "topic-color"
+
+/* Dummy Block */
+@mixin dummy
+  float: left
+  height: 350px
+  @include span(1)
+#block-block-1
+  @include dummy
+  @include mieten
+#block-block-2
+  @include dummy
+  @include immobilien_kompetenz
 
 /* topic block */
 #block-views-topic-image-block

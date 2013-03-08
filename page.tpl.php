@@ -37,6 +37,7 @@ piwikTracker.enableLinkTracking();
 	<?php } else { ?>
 	  <div id="middle" class="notfront-page clearfix">
 	<?php } ?>
+  <div class="wrapper">
 	   <div class="nav span1 pull-left">
 			<?php print render($page['sidebar_first']); ?>
 	    <?php print render($page['sidebar_second']); ?>
@@ -47,6 +48,7 @@ piwikTracker.enableLinkTracking();
       <?php } ?>
 			<?php print render($page['content']); ?>
 	   </div>
+  </div><!-- wrapper -->
 	</div>
   <!-- middle -->
 

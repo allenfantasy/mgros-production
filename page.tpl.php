@@ -7,18 +7,6 @@ $page['header']: Logo and Language Switch
 $page['footer']:*/
 ?>
 
-<!-- Piwik -->
-<script type="text/javascript">
-var pkBaseURL = (("https:" == document.location.protocol) ? "https://web17.borsch01.htmldesign.de/piwik/" : "http://web17.borsch01.htmldesign.de/piwik/");
-document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script type="text/javascript">
-try {
-var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 12);
-piwikTracker.trackPageView();
-piwikTracker.enableLinkTracking();
-} catch( err ) {}
-</script><noscript><p><img src="http://web17.borsch01.htmldesign.de/piwik/piwik.php?idsite=12" style="border:0" alt="" /></p></noscript>
-<!-- End Piwik Tracking Code -->
 
 <div class="container span3 clearfix">
 

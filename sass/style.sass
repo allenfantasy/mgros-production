@@ -1,6 +1,9 @@
+// Variables
+$left-pad: 40px
+$orange: #E55300
+
 @import "global"
 
-$left-pad: 40px
 /* Breadcrumb */
 #head
   .logo
@@ -15,7 +18,7 @@ $left-pad: 40px
   padding-left: $left-pad
   li
     list-style: none
-    color: #FF8754
+    color: $orange
     padding: 2px 0
     margin: 0
     &:hover
@@ -26,7 +29,7 @@ $left-pad: 40px
         size: 16px
         family: "Gill Sans", Verdana, sans-serif
     a.active
-      color: #FF8754
+      color: $orange
     ul
       padding-left: 15px
   li.active-trail
@@ -63,18 +66,16 @@ $left-pad: 40px
       @include span(1)
       padding: 0
       &:hover
-        color: #F2AE7F
-        //list-style: disc
-        //list-style-position: outside
+        color: $orange
+        list-style: disc
+        list-style-position: inside
       a
         color: #6B5C4F
         display: block
         margin: 5px 0
-        border: 1px solid
-        border-color: transparent #6B5C4F
         text-indent: $left-pad
         &:hover
-          color: #F2AE7F
+          color: $orange
     li.first
       a
         border-left: none
@@ -88,7 +89,7 @@ $left-pad: 40px
     padding: 0
     li
       float: right
-      color: #E55300
+      color: $orange
       list-style: none
       padding: 0 3px 0 0
       &:hover
@@ -106,7 +107,7 @@ $left-pad: 40px
   .views-row
     float: left
     position: relative
-    a
+    a.title
       position: absolute
       top: 150px
       @include span(1)
@@ -138,6 +139,11 @@ $left-pad: 40px
 #block-block-2
   @include dummy
   @include immobilien_kompetenz
+#block-block-3
+  float: left
+  height: 400px
+  @include span(1)
+  background-color: $orange
 
 /* topic block */
 #block-views-topic-image-block

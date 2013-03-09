@@ -10,7 +10,8 @@ for($i=0;$i<count($variables['view']->style_plugin->rendered_fields);$i++) {
     <?php $i=0; // Counter ?>
     <?php foreach ($info as $item) { ?>
     <div class="views-row span1">
-        <a href="<?php print $item['url']; ?>">
+        <?php $url = base_path() . $item['url']; ?>
+        <a class="title" href="<?php print $url; ?>">
           <?php if($item['image']) { ?>
             <div class="title color-<?php print $i ?>">
           <?php } else { ?>
@@ -18,9 +19,10 @@ for($i=0;$i<count($variables['view']->style_plugin->rendered_fields);$i++) {
           <?php } ?>
               <span class="inner"><?php print $item['title']; ?></span>
         </div></a>
+      <a href="<?php print $url; ?>">
       <div class="image color-<?php print $i ?>">
         <?php print $item['image']; ?>
-      </div>
+      </div></a>
     </div>
     <?php $i++; } ?>
   </div>

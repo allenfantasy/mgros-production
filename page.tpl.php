@@ -28,7 +28,7 @@ piwikTracker.enableLinkTracking();
     </div>
     <?php print render($page['header']) ?>
     <?php print render($page['preface']) ?>
-    <?php print($breadcrumb); ?>
+    <?php if(!$is_front) { print($breadcrumb); } ?>
   </div>
   <!-- head -->
 

@@ -63,17 +63,16 @@ $orange: #E55300
     li
       float: left
       list-style: none
-      @include span(1)
+      width: 320px - $left-pad
+      margin-left: $left-pad
       padding: 0
       &:hover
         color: $orange
         list-style: disc
-        list-style-position: inside
       a
         color: #6B5C4F
         display: block
         margin: 5px 0
-        text-indent: $left-pad
         &:hover
           color: $orange
     li.first
@@ -123,6 +122,7 @@ $orange: #E55300
     .image
       height: 200px
       clear: both
+      position: relative
   a
     color: #fff
 
@@ -140,9 +140,7 @@ $orange: #E55300
   @include dummy
   @include immobilien_kompetenz
 #block-block-3
-  float: left
-  height: 400px
-  @include span(1)
+  @include dummy
   background-color: $orange
 
 /* topic block */
@@ -162,6 +160,18 @@ $orange: #E55300
       padding-top: 10px
       display: block
       margin-left: $left-pad
+#block-views-non-topic-block
+  @extend #block-views-topic-block
+  .non-topic-name
+    height: 48px
+    background-color: $orange
+    margin-top: 2px
+    font-size: 18px
+    color: #fff
+    span
+      display: block
+      margin-left: 40px
+      padding-top: 10px
 
 /* contact form */
 .node-webform
@@ -195,7 +205,16 @@ $orange: #E55300
 
 /* download block */
 
-/* artikel */
+/* artikel page */
+.node
+  h2
+    margin-bottom: 5px
+  ul
+    margin-top: 0
+  p
+    margin-top: 0
+  table
+    border-collapse: separate
 
 /* a-z */
 

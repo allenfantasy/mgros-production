@@ -23,6 +23,7 @@ img {
 
 h2 {
   color: #e55300;
+  margin-bottom: 5px;
 }
 
 h3 {
@@ -135,19 +136,18 @@ h3 {
 #block-menu-menu-header-menu-a-z ul li {
   float: left;
   list-style: none;
-  width: 320px;
+  width: 280px;
+  margin-left: 40px;
   padding: 0;
 }
 #block-menu-menu-header-menu-a-z ul li:hover {
   color: #e55300;
   list-style: disc;
-  list-style-position: inside;
 }
 #block-menu-menu-header-menu-a-z ul li a {
   color: #6b5c4f;
   display: block;
   margin: 5px 0;
-  text-indent: 40px;
 }
 #block-menu-menu-header-menu-a-z ul li a:hover {
   color: #e55300;
@@ -206,6 +206,7 @@ h3 {
 .view-header-topics .views-row .image {
   height: 200px;
   clear: both;
+  position: relative;
 }
 .view-header-topics a {
   color: white;
@@ -260,22 +261,22 @@ h3 {
   background-color: #ff9a00;
 }
 
-#block-views-topic-block .vermieten {
+#block-views-topic-block .vermieten, #block-views-non-topic-block .vermieten {
   background-color: #ff5f00;
 }
-#block-views-topic-block .verkaufen {
+#block-views-topic-block .verkaufen, #block-views-non-topic-block .verkaufen {
   background-color: #ffb300;
 }
-#block-views-topic-block .immobilienservice {
+#block-views-topic-block .immobilienservice, #block-views-non-topic-block .immobilienservice {
   background-color: #e55300;
 }
-#block-views-topic-block .mieten {
+#block-views-topic-block .mieten, #block-views-non-topic-block .mieten {
   background-color: #ff8754;
 }
-#block-views-topic-block .kaufen {
+#block-views-topic-block .kaufen, #block-views-non-topic-block .kaufen {
   background-color: #ff9a00;
 }
-#block-views-topic-block .immobilienkompetenz {
+#block-views-topic-block .immobilienkompetenz, #block-views-non-topic-block .immobilienkompetenz {
   background-color: #fdc745;
 }
 
@@ -296,7 +297,7 @@ h3 {
 
 #block-block-3 {
   float: left;
-  height: 400px;
+  height: 350px;
   width: 320px;
   background-color: #e55300;
 }
@@ -306,21 +307,34 @@ h3 {
   float: right;
 }
 
-#block-views-topic-block {
+#block-views-topic-block, #block-views-non-topic-block {
   float: left;
   height: 50px;
   width: 320px;
 }
-#block-views-topic-block .topic-name {
+#block-views-topic-block .topic-name, #block-views-non-topic-block .topic-name {
   height: 48px;
   margin-top: 1px;
   color: white;
   font-size: 18px;
 }
-#block-views-topic-block .topic-name span {
+#block-views-topic-block .topic-name span, #block-views-non-topic-block .topic-name span {
   padding-top: 10px;
   display: block;
   margin-left: 40px;
+}
+
+#block-views-non-topic-block .non-topic-name {
+  height: 48px;
+  background-color: #e55300;
+  margin-top: 2px;
+  font-size: 18px;
+  color: white;
+}
+#block-views-non-topic-block .non-topic-name span {
+  display: block;
+  margin-left: 40px;
+  padding-top: 10px;
 }
 
 /* contact form */
@@ -361,5 +375,18 @@ h3 {
 }
 
 /* download block */
-/* artikel */
+/* artikel page */
+.node h2 {
+  margin-bottom: 5px;
+}
+.node ul {
+  margin-top: 0;
+}
+.node p {
+  margin-top: 0;
+}
+.node table {
+  border-collapse: separate;
+}
+
 /* a-z */

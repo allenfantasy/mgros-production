@@ -7,6 +7,12 @@ $page['header']: Logo and Language Switch
 $page['footer']:*/
 ?>
 
+<script>
+jQuery('.view-header-topics .views-row img').click(function(e){
+  alert('test')
+  //$(e.target).hide()
+});
+</script>
 
 <div class="container span3 clearfix">
 

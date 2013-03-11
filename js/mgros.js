@@ -6,8 +6,8 @@
       //$(e.target).css('visibility', 'hidden');
       $(e.target).hide();
 	});
-    $('.view-header-topics .views-row').mouseleave(function(e) {
+    $('.view-header-topics .views-row .image').mouseleave(function(e) {
       $(e.target).find('img').show();
-    })	
+    })
   });
 })(jQuery);

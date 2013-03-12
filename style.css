@@ -159,26 +159,37 @@ h3 {
   border-right: none;
 }
 
-#footer ul {
-  width: 55%;
+#footer #block-menu-menu-footer-menu {
   float: right;
+  width: 50%;
+}
+#footer ul {
+  float: left;
   padding: 0;
 }
 #footer ul li {
-  float: right;
-  color: #e55300;
+  float: left;
   list-style: none;
-  padding: 0 3px 0 0;
+  padding: 15px 8px 0 8px;
+  margin: 0;
+  /*border-left: 1px solid */
 }
 #footer ul li:hover {
-  list-style: disc;
-  list-style-position: inside;
+  background: url(img/bullet.png) no-repeat center 0;
 }
 #footer ul li a {
   font-size: 10px;
+  display: block;
+  line-height: 10px;
+}
+#footer ul li a:hover {
+  color: #e55300;
 }
 #footer ul li.active-trail {
   list-style: disc;
+}
+#footer ul li.first {
+  border-left: none;
 }
 
 /* Search */

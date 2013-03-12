@@ -148,6 +148,7 @@ h3 {
   color: #6b5c4f;
   display: block;
   margin: 5px 0;
+  border-right: 1px solid;
 }
 #block-menu-menu-header-menu-a-z ul li a:hover {
   color: #e55300;

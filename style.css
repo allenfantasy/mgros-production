@@ -148,7 +148,7 @@ h3 {
   color: #6b5c4f;
   display: block;
   margin: 5px 0;
-  border-right: 1px solid;
+  border-right: 1px solid #6b5c4f;
 }
 #block-menu-menu-header-menu-a-z ul li a:hover {
   color: #e55300;
@@ -173,7 +173,6 @@ h3 {
   list-style: none;
   padding: 15px 8px 0 8px;
   margin: 0;
-  /*border-left: 1px solid */
 }
 #footer ul li:hover {
   background: url(img/bullet.png) no-repeat center 0;
@@ -186,8 +185,11 @@ h3 {
 #footer ul li a:hover {
   color: #e55300;
 }
+#footer ul li a.active {
+  color: #e55300;
+}
 #footer ul li.active-trail {
-  list-style: disc;
+  background: url(img/bullet.png) no-repeat center 0;
 }
 #footer ul li.first {
   border-left: none;
@@ -325,7 +327,7 @@ h3 {
   width: 320px;
 }
 #block-views-topic-block .topic-name, #block-views-non-topic-block .topic-name {
-  height: 48px;
+  height: 49px;
   margin-top: 1px;
   color: white;
   font-size: 18px;
@@ -402,3 +404,10 @@ h3 {
 }
 
 /* a-z */
+.ui-widget {
+  font-size: 13px;
+}
+
+.ui-accordion .ui-accordion-header a {
+  font-size: 13px;
+}

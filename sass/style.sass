@@ -73,7 +73,7 @@ $orange: #E55300
         color: #6B5C4F
         display: block
         margin: 5px 0
-        border-right: 1px solid
+        border-right: 1px solid #6B5C4F
         &:hover
           color: $orange
     li.first
@@ -94,19 +94,18 @@ $orange: #E55300
       list-style: none
       padding: 15px 8px 0 8px
       margin: 0
-      /*border-left: 1px solid*/
       &:hover
         background: url(img/bullet.png) no-repeat center 0
-        //list-style: disc
-        //list-style-position: inside
       a
         font-size: 10px
         display: block
         line-height: 10px
       a:hover
         color: $orange
+      a.active
+        color: $orange
     li.active-trail
-      list-style: disc
+      background: url(img/bullet.png) no-repeat center 0
     li.first
       border-left: none
 
@@ -162,7 +161,7 @@ $orange: #E55300
   height: 50px
   @include span(1)
   .topic-name
-    height: 48px
+    height: 49px
     margin-top: 1px
     color: #fff
     font-size: 18px
@@ -228,4 +227,7 @@ $orange: #E55300
     border-collapse: separate
 
 /* a-z */
-
+.ui-widget
+  font-size: 13px
+.ui-accordion .ui-accordion-header a
+  font-size: 13px

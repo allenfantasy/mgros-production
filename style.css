@@ -165,13 +165,13 @@ h3 {
   width: 50%;
 }
 #footer ul {
-  float: left;
+  float: right;
   padding: 0;
 }
 #footer ul li {
   float: left;
   list-style: none;
-  padding: 15px 8px 0 8px;
+  padding: 15px 0 0 16px;
   margin: 0;
 }
 #footer ul li:hover {
@@ -221,6 +221,9 @@ h3 {
   height: 200px;
   clear: both;
   position: relative;
+}
+.view-header-topics .views-row .image.hide img {
+  display: none;
 }
 .view-header-topics a {
   color: white;

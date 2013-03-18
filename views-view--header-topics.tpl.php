@@ -22,11 +22,13 @@ for($i=0;$i<count($variables['view']->style_plugin->rendered_fields);$i++) {
               <span class="inner"><?php print $item['title']; ?></span>
         </div></a>
       <a href="<?php print $url; ?>">
+      <?php if($item['image'] && $item['photo']) { ?>
       <div class="image color-<?php print $i ?>">
-        <?php 
-          if ($item['photo']) { 
-            print $item['image']; 
-          } 
+      <?php } else { ?>
+      <div class="image color-<?php print $i ?> hide">
+      <?php } ?>
+        <?php
+          print $item['image'];
         ?>
       </div></a>
     </div>

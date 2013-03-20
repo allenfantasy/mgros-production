@@ -124,6 +124,9 @@ h3 {
   color: white;
   font-size: 14px;
 }
+.region-preface .block-menu ul li.active-trail {
+    list-style: disc;
+}
 
 #block-menu-menu-header-menu-a-z {
   width: 100%;
@@ -196,6 +199,10 @@ h3 {
 }
 
 /* Search */
+p.search-info {
+  display: none;
+}
+
 /* Preface */
 .view-header-topics .views-row {
   float: left;
